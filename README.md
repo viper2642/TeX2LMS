@@ -15,6 +15,6 @@ For a multiple choice question (of MC type in blackboard) spreadsheet must conta
 - "Answer j" is the jth answer to the multiple choice and "Status j" is either "correct" or "incorrect".
 
 
-## ** Important **
+##**Important**
 
-After importing the tab-separated column text file into the LMS, you ** must manually edit the questions ** (one-by-one) on LMS so that the links to the images are updated with links accessible to students. Indeed, every image/file stored in the Content Collection has two urls; the url corresponding to the natural location on the server (which the TeX2LMS script uses) and a cryptic alias shown only to students. For students to see the PNG images of a question, the cryptic alias is to be used. LMS automatically updates urls, but the process is only triggered upon manual editting of individual questions.
+After importing the tab-separated column text file into the LMS, you **must manually edit the questions** (one-by-one) on LMS so that the links to the images are updated with links accessible to students. Indeed, every image/file stored in the Content Collection has two urls; the url corresponding to the natural location on the server (which the TeX2LMS script uses) and a cryptic alias shown only to students. For students to see the PNG images of a question, the cryptic alias is to be used. LMS automatically updates urls, but the process is only triggered upon manual editting of individual questions.
