@@ -24,7 +24,17 @@ def make_template_spreadsheet(filename="template_mcq_database.ods",engine="odf")
     """
     print("Creating new spreadsheet with minimal columns to make a pool of MCQ questions")
     data=pd.DataFrame(columns=["Question Type","Question Title","Filename prefix","Description 1","Answer 1","Status 1","Answer 2","Statuts 2"])
-    data.to_excel(filename,engine=engine)
+    # default row
+    data.loc[0,"Question Type"]="MC"
+    data.loc[0,"Question Title"]="Title of the question (ignored by LMS)"
+    data.loc[0,"Filename prefix"]="prefix-without-spaces"
+    data.loc[0,"Description 1"]="What is $2\times 2$?"
+    data.loc[0,"Answer 1"]="$4$"
+    data.loc[0,"Status 1"]="correct"
+    data.loc[0,"Answer 2"]="$5$"
+    data.loc[0,"Status 2"]="incorrect"
+    
+    data.to_excel(filename,engine=engine,index=False)
     print("Written "+filename)
     
 
