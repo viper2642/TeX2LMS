@@ -23,7 +23,7 @@ def make_template_spreadsheet(filename="template_mcq_database.ods",engine="odf")
     engine="odf" : Pandas engine used to generate file
     """
     print("Creating new spreadsheet with minimal columns to make a pool of MCQ questions")
-    data=pd.DataFrame(columns=["Question Type","Question Title","Filename prefix","Description 1","Answer 1","Status 1","Answer 2","Statuts 2"])
+    data=pd.DataFrame(columns=["Question Type","Question Title","Filename prefix","Description 1","Answer 1","Status 1","Answer 2","Status 2"])
     # default row
     data.loc[0,"Question Type"]="MC"
     data.loc[0,"Question Title"]="Title of the question (ignored by LMS)"
